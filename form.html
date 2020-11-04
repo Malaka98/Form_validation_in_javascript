@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js.js"></script>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="head">
+				<h1 class="heading" id="text1">NSBM</h1>
+				<h1 class="heading" id="text2">STUDENT REGISTRATION FORM</h1>
+				<hr>
+			</div> <!--head-->
+
+			<form action="form.html" method="post" name="myForm" onsubmit=" return validateForm()">
+				<div class="row">
+						<label>Full Name</label>
+						<input type="text" name="fname" id="fName">
+				</div> <!--row-->
+
+				<label class="error" id="name_error"></label>
+
+				<div class="row">
+						<label>Address</label>
+						<input type="text" name="address" id="add">
+				</div> <!--row-->
+
+				<label class="error" id="add_error"></label>
+
+				<div class="row">
+						<label>Email</label>
+						<input type="text" name="email" id="txtemail">
+				</div> <!--row-->
+
+				<label class="error" id="email_error"></label>
+
+				<div class="row">
+						<label>Phone Number</label>
+						<input type="text" name="ph" id="pH">
+				</div> <!--row-->
+
+				<label class="error" id="ph_error"></label>
+
+				<label id="ph"></label>
+				<div class="row">
+						<label>NIC</label>
+						<input type="text" name="nic" id="nic">
+				</div> <!--row-->
+
+				<label class="error" id="nic_error"></label>
+
+				<label id="nic"></label>
+				<div class="row">
+						<label>Degree Programme</label>
+						<select name="Degree_Programme" name="dp" id="dpselect">
+							<option value="Not_Select">Select Your Degree</option>
+							<option value="BSc(Hons)Software_Enginnering">BSc (Hons) Software Enginnering</option>
+							<option value="BSc(Hons)Computer_Security">BSc (Hons) Computer Security</option>
+							<option value="BSc(Hons)Computer_Networks">BSc (Hons) Computer Networks</option>
+						</select>
+				</div> <!--row-->
+
+				<label class="error" id="dp_error"></label>
+
+				<label id="dp"></label>
+				<div class="row2">
+						<label>Gender</label>
+						<div>
+							<input type="radio" name="Gender" value="male" id="male">
+							<label>Male</label>
+							<input type="radio" name="Gender" value="female" id="femail">
+							<label>Female</label>
+						</div>
+				</div> <!--row-->
+
+				<label class="error" id="check_error"></label>
+
+				<div class="row">
+						<label>Password</label>
+						<input type="Password" name="" id="pass">
+				</div> <!--row-->
+
+				<label class="error" id="pass_error"></label>
+
+				<div class="row">
+						<label>Retype Password</label>
+						<input type="Password" name="" id="cpass">
+				</div> <!--row-->
+
+				<label class="error" id="repass_error"></label><br>
+
+					<input class="checkbox_style" type="checkbox" name="agree" id="check">
+					<label>Aggre to terms amd conditions</label><br><br>
+					<input type="submit" name="submit" class="btn" value="Submit">
+			</form>
+	</div> <!--container-->
+	</section>
+</body>
+</html>
